@@ -1,0 +1,94 @@
+:root {
+  --cell-size: 38px;
+  --grid-size: 14;
+}
+
+#grid {
+  width: calc(var(--cell-size) * var(--grid-size));
+  height: calc(var(--cell-size) * var(--grid-size));
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#grid > div {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  font-size: 8px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.alien {
+  background-image: url("./images/alien.png");
+}
+
+.spaceship {
+  background-image: url("./images/spaceship.png");
+}
+
+.laser {
+  background-image: url("./images/laser.png");
+}
+
+.boom {
+  background-image: url("./images/boom.png");
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-area {
+  padding: 12px;
+  position: relative;
+}
+
+.game-info {
+  margin-top: 5px;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+h1{
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+p{
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  color: #ffffff;
+  background-color: #f70d68;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+
+.game-alert {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-alert-message {
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f70d68;
+}

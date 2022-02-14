@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Whack A Bug</title>
+    <link rel="stylesheet" href="../common/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="board">
+
+      <div class="game-info">
+        <h1>Whack a Bug</h1>
+        <p>Colpisci il bug più volte che puoi prima dello scadere del tempo!</p>
+      </div>
+
+      <div class="game-area">
+        <div id="grid">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-score">
+      <h3 id="h3-time">Tempo: <span id="timer-display"></span></h3>
+      <h3>Punteggio: <span id="score-display"></span></h3>
+      <button id="restart">Rigioca</button>    
+    </div>
+
+    <script src="../common/utils.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+:root {
+  --cell-size: 120px;
+  --cell-gutter: 20px;
+}
+
+#grid {
+  width: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+  height: calc((var(--cell-size) + var(--cell-gutter)) * 3);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+.cell {
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border: 4px solid #ffffff;
+
+  cursor: pointer; /* Fa comparire la mano del mouse  */
+
+  display: flex;
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-area {
+  padding: 12px;
+  position: relative;
+}
+
+.game-info {
+  margin-top: 20px;
+  padding: 12px;
+  width: 400px;
+  text-align: center;
+}
+
+h1{
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+p{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  color: #ffffff;
+  background-color: #f70d68;
+  padding: 5px 15px;
+  margin-top: 20px;
+}
+
+.game-alert {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-alert-message {
+  font-size: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f70d68;
+}
